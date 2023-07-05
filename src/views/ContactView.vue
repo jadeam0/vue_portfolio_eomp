@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid mx-auto  p-5 border border-black border rounded-3 w-75 cont-frm" id="form">
+    <div class="container-fluid mx-auto  p-5 border rounded-3 w-75 cont-frm" id="form">
             <form action="https://formspree.io/f/xpzekzqg" method="POST" class="contact">
                 <legend class="text-center fw-bold mb-5" id="con-lab">Get in Contact</legend><br>
                 <div class="row">

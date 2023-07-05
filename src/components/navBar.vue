@@ -23,7 +23,7 @@
                       <router-link class="nav-link" to="/">Education</router-link>
                     </li>
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/">Projects</router-link>
+                      <router-link class="nav-link" to="/projects">Projects</router-link>
                     </li>
                     <li class="nav-item">
                       <router-link class="nav-link" to="/">Testmonials</router-link>
