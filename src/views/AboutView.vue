@@ -5,7 +5,7 @@
   <div class="about-pop">
     <div class="about-sec" id="about">
     <div class="about-img animate__animated animate__zoomIn">
-      <img src="https://i.postimg.cc/Y28kmMJx/IMG20220917112942.jpg" alt="image" loading="lazy">
+      <img src="https://i.postimg.cc/0QVkZ9x1/IMG20220917112942-removebg.png" alt="image" loading="lazy">
     </div>
     <div class="about-text">
       <p>
@@ -18,12 +18,12 @@
         Seeking an entry-level position to put my academic understanding to use, obtain real-world experience, and hone my talents. I'm dedicated to having a significant effect in a professional context with a new viewpoint and a strong work ethic.
       </p>
 
-      <button type="download-button"><a href="#"> Download CV</a></button>
+      <button type="download-button"><a href="https://docs.google.com/document/d/1hpSLkc44evquOCJX0n0-1q7USR3zjrZb/edit?usp=sharing&ouid=107132493667870155573&rtpof=true&sd=true"> Download CV</a></button>
     </div>
   </div>
   </div>
 
-  <div class="row extra-in">
+  <div class="row gap-2 m-4 extra-in">
     <div class="col-4 ment">
       <h1>Mentions</h1>
 
@@ -37,7 +37,7 @@
       <p>Newspaper (Photographer, Editor)</p>
 
     </div>
-    <div class="col-4">
+    <div class="col-3 ment">
       <h1>Hobbies</h1>
 
       <p>Reading</p>
@@ -46,7 +46,7 @@
       <p>Computer Builds</p>
 
     </div>
-    <div class="col-4">
+    <div class="col-4 ment">
       <h1>Language</h1>
 
       <p>English</p>
@@ -79,18 +79,10 @@
 
 .about-img img{
   max-width: 100%;
-  width: 590px;
+  width: 680px;
   height: auto;
-  /* border-left: 10px;
-  padding-left: 10px; */
   border-radius: 10px;
-  /* margin: 10px 15%; */
 }
-
-/* .about-pop {
-  border-bottom: solid 2px #10002b;
-
-} */
 
 button {
   text-decoration: none;
@@ -152,21 +144,26 @@ button:active {
 
 .extra-in {
   height: 650px;
-  text-align: center;
-
 }
 
 .extra-in h1{
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: underline 2px solid #682a92;
-  margin: 10px;
   margin-top: 7rem;
-  display: flex;
-  justify-content: center;
 }
 
-.ment h4 {
-  text-decoration: #f441a5;
+.extra-in h4 {
+  text-decoration: underline #f441a5;
+}
+
+.ment {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 </style>

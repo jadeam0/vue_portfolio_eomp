@@ -29,7 +29,7 @@
                       <router-link class="nav-link" to="/">Testmonials</router-link>
                     </li>
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/">Contact</router-link>
+                      <router-link class="nav-link" to="/contact">Contact</router-link>
                     </li>
                     
                   </ul>
