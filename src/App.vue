@@ -22,19 +22,36 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #dec9e9;
+
+  height: 714px;
+  width: 100%;
+  background: linear-gradient(45deg, #1f1c1d,#353334, #4c494a, #626061, #626061, #4c494a, #353334, #1f1c1d, 
+  #1f1c1d,#353334, #4c494a, #626061, #626061, #4c494a, #353334, #1f1c1d,  #1f1c1d,#353334, #4c494a, #626061, #626061, #4c494a, #353334, #1f1c1d);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+
+  animation-name: color;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-/* nav {
-  padding: 30px;
+@keyframes color {
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0 50%;
+  }
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+::-webkit-scrollbar{
+  display: none;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>
