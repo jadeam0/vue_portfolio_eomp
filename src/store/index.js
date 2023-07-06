@@ -1,30 +1,69 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+const projectsUrl = "https://jadeam0.github.io/data/db.json";
 
 export default createStore({
   state: {
     projects: null,
-    // project: null,
+    testimonials: null,
+    education: null
   },
-  
+
   mutations: {
-    setProjects: (state, projects) => {
-      state.projects = projects;
+    setProjects: (state, value) => {
+      state.projects = value;
     },
-    // setProject: (state, project) => {
-    //   state.project = project;
-    // },
+    setTestimonials: (state, value) => {
+      state.testimonials = value;
+    },
+    setEducation: (state, value) => {
+      state.education = value;
+    },
   },
-  
+
   actions: {
-    getProjects: async (context) => {
-      fetch('https://jadeam0.github.io/data/projects-db.json')
-        .then((res) => res.json())
-        .then((projects) => context.commit('setProjects', projects));
+    async fetchProjects(context, error) {
+      try {
+        const response = await fetch(projectsUrl);
+        const data = await response.json();
+        const projects = data.projects;
+        if (projects) {
+          context.commit("setProjects", projects);
+        } else {
+          alert("ERROR");
+        }
+      } catch (e) {
+        console.error(error);
+      }
     },
-    // getProject: async (context, id) => {
-    //   fetch('https://jadeam0.github.io/data/projects-db.json' + id)
-    //     .then((res) => res.json())
-    //     .then((project) => context.commit('setProject', project));
-    // },
+
+    async fetchTestimonials(context, error) {
+      try {
+        const response = await fetch(projectsUrl);
+        const data = await response.json();
+        const testimonials = data.testimonials;
+        if (testimonials) {
+          context.commit("setTestimonials", testimonials);
+        } else {
+          alert("ERROR");
+        }
+      } catch (e) {
+        console.error(error);
+      }
+    },
+
+    async fetchEducation(context, error) {
+      try {
+        const response = await fetch(projectsUrl);
+        const data = await response.json();
+        const education = data.education;
+        if (education) {
+          context.commit("setEducation", education);
+        } else {
+          alert("ERROR");
+        }
+      } catch (e) {
+        console.error(error);
+      }
+    }
   },
-})
+});

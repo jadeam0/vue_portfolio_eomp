@@ -17,16 +17,13 @@
                       <router-link class="nav-link" to="/about">About</router-link>
                     </li>
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/">Resume</router-link>
-                    </li>
-                    <li class="nav-item">
-                      <router-link class="nav-link" to="/">Education</router-link>
+                      <router-link class="nav-link" to="/resume">Resume</router-link>
                     </li>
                     <li class="nav-item">
                       <router-link class="nav-link" to="/projects">Projects</router-link>
                     </li>
                     <li class="nav-item">
-                      <router-link class="nav-link" to="/">Testmonials</router-link>
+                      <router-link class="nav-link" to="/testemonials">Testmonials</router-link>
                     </li>
                     <li class="nav-item">
                       <router-link class="nav-link" to="/contact">Contact</router-link>
