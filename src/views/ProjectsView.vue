@@ -85,6 +85,10 @@ export default {
   gap: 2rem;
 }
 
+img {
+  border-radius: 20px;
+}
+
 .container {
   width: 100%;
   height: fit-content;
@@ -92,14 +96,14 @@ export default {
   /* border: 3px solid white; */
 }
 
-.col {
+.col-3 {
   display: flex;
   justify-content: center;
   align-items: center;
   /* flex-direction: column; */
   /* border: solid yellow; */
-  /* width: 100%; */
-  /* height: 100%; */
+  /* width: 100%;
+  height: 100%; */
 }
 
 h1 {
@@ -183,4 +187,30 @@ button:hover::before {
 button:active {
   background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
+
+
+@media only screen and (max-width: 838px) {
+  .card {
+    width: 10rem;
+  }
+  .col-3 {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: solid yellow; */
+  width: 100%;
+  height: 100%;
+}
+}
+    @media only screen and (max-width: 1068px) {
+      .card {
+        width: 17rem;
+        height: auto;
+      }
+    
+      button {
+        width: 5.5rem;
+      }
+    }
 </style>
